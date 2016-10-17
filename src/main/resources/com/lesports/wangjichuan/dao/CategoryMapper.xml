@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   <mapper namespace="com.lesports.wangjichuan.dao.CategoryDao">
+   <resultMap id="CategoryMap" type="com.lesports.wangjichuan.po.Category">
+       <id property="id" column="id"/>
+       <result property="categoryId" column="category_id"/>
+       <result property="name" column="name"/>
+   </resultMap>
+    <select id="get" resultType="com.lesports.wangjichuan.po.Category" resultMap="CategoryMap">
+        select * from CMS_CATEGORY_01 WHERE  id &lt; #{id}
+    </select>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${cms.db.driverClassName}"></property>
+        <property name="url" value="${cms.db.url}"></property>
+        <property name="username" value="${cms.db.username}"></property>
+        <property name="password" value="${cms.db.password}"></property>
+        <property name="maxActive" value="30"></property>
+        <property name="maxIdle" value="10"></property>
+        <property name="minIdle" value="5"></property>
+        <property name="initialSize" value="10"></property>
+        <property name="logAbandoned" value="true"></property>
+        <property name="removeAbandoned" value="true"></property>
+        <property name="removeAbandonedTimeout" value="180"></property>
+        <property name="maxWait" value="5000"></property>
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"></property>
+        <property name="minEvictableIdleTimeMillis" value="18000000"></property>
+    </bean>
+
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--<property name="mapperLocations" value="classpath:com/lesports/wangjichuan/dao/S" />-->
+        <!--<property name="plugins">
+            <list>
+                <ref bean="autoMapperInterceptor" />
+                <ref bean="paginationInterceptor" />
+            </list>
+        </property>-->
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.letv.cms.ndao" />
+    </bean>
+
+   <!-- <bean id="paginationInterceptor" class="com.letv.cms.ndao.interceptor.PaginationInterceptor"></bean>
+    <bean id="autoMapperInterceptor" class="com.letv.cms.ndao.interceptor.AutoMapperInterceptor"></bean>-->
+
+</beans>	

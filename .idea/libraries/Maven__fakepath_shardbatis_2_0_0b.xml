@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: fakepath:shardbatis:2.0.0b">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/fakepath/shardbatis/2.0.0b/shardbatis-2.0.0b.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/fakepath/shardbatis/2.0.0b/shardbatis-2.0.0b-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/fakepath/shardbatis/2.0.0b/shardbatis-2.0.0b-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

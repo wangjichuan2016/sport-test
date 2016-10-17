@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE shardingConfig PUBLIC "-//shardbatis.googlecode.com//DTD Shardbatis 2.0//EN"  
+  "http://shardbatis.googlecode.com/dtd/shardbatis-config.dtd">  
+<shardingConfig>  
+     <!-- parseList可选配置  
+             如果配置了parseList,只有在parseList范围内并且不再ignoreList内的sql才会被解析和修改  -->  
+ <!--    <parseList><value>shardTest.addShardTest</value></parseList>  -->
+     
+     <!--  配置分表策略  -->  
+     <strategy tableName="letv_chat_message_00" strategyClass="com.lesports.wangjichuan.strategy.MySQLShardStrategy"/>
+     <strategy tableName="CMS_CATEGORY_01" strategyClass="com.lesports.wangjichuan.strategy.MySQLShardStrategy"/>
+</shardingConfig>
+
