@@ -3,10 +3,9 @@ package com.letv.sports;
 import org.apache.velocity.Template;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
+import org.apache.velocity.runtime.RuntimeConstants;
 import org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader;
 import org.junit.Test;
-import sun.tools.java.RuntimeConstants;
-
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.Date;
@@ -19,8 +18,8 @@ public class VelocityTest {
     @Test
     public void test01(){
         VelocityEngine ve = new VelocityEngine();
-//        ve.setProperty(RuntimeConstants);
-        ve.setProperty("classpath.resource.loader.class", ClasspathResourceLoader.class.getName());
+        ve.setProperty(RuntimeConstants.RESOURCE_LOADER,"class");
+        ve.setProperty("class.resource.loader.class", "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
         ve.init();
         Template t = ve.getTemplate("hello.vm");
         VelocityContext ctx = new VelocityContext();
@@ -32,7 +31,7 @@ public class VelocityTest {
         ctx.put("list",temp);
         StringWriter sw = new StringWriter();
         t.merge(ctx,sw);
-
+        print(sw.toString());
 
     }
     public <T> void print(T t){
