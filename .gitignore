@@ -1,7 +1,7 @@
 /*
+/.idea/
 !.gitignore
 !/src/
 !*.properties
 !*.txt
 !*.xml
-/.idea/
