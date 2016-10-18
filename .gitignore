@@ -1,6 +1,8 @@
 /*
+/.idea/
 !.gitignore
-!/src/
+!src
 !*.properties
 !*.txt
-!*.xml
+!pom.xml
+workspace.xml
