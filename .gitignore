@@ -1,0 +1,7 @@
+/*
+!.gitignore
+!/src/
+!*.properties
+!*.txt
+!*.xml
+!*.tld

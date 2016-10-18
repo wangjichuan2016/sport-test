@@ -84,9 +84,13 @@
           <element id="library" level="project" name="Maven: net.sf.jsqlparser:jsqlparser:0.8.0" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+<<<<<<< HEAD
           <element id="library" level="project" name="Maven: org.apache.velocity:velocity:1.7" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
+=======
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
+>>>>>>> 6366e55c9a4c1cb3ed4f76a51c39db0b61d24239
         </element>
       </element>
       <element id="directory" name="META-INF">
