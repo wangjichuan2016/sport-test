@@ -25,6 +25,8 @@
         <module name="sports-test" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sports-test" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
-
