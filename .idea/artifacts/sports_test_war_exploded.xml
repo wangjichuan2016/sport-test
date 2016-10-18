@@ -85,6 +85,7 @@
           <element id="library" level="project" name="Maven: net.sf.jsqlparser:jsqlparser:0.8.0" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi:3.13" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.9" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" />
         </element>
       </element>
     </root>

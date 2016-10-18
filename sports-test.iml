@@ -107,6 +107,7 @@
     <orderEntry type="library" name="Maven: net.sf.jsqlparser:jsqlparser:0.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.poi:poi:3.13" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.9" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" level="project" />
   </component>
 </module>
 
